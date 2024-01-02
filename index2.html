@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .background-container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      animation: gradientAnimation 10s infinite, moveShapes 10s infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background: linear-gradient(to right, #007bff, #0056b3);
+      }
+
+      50% {
+        background: linear-gradient(to right, #0056b3, #007bff);
+      }
+
+      100% {
+        background: linear-gradient(to right, #007bff, #0056b3);
+      }
+    }
+
+    @keyframes moveShapes {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      25% {
+        transform: translateY(50vh) rotate(90deg);
+      }
+
+      50% {
+        transform: translateY(100vh) rotate(180deg);
+      }
+
+      75% {
+        transform: translateY(150vh) rotate(270deg);
+      }
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: auto;
+      margin-top: 100px;
+      animation: fadeInUp 1s forwards;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: 1px solid #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border: 1px solid #0056b3;
+    }
+
+    .shape {
+      position: absolute;
+      animation: moveShapes 10s infinite;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 87px solid #fff;
+      top: 50vh;
+      left: 10vw;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+      top: 20vh;
+      left: 30vw;
+    }
+
+    .rectangle {
+      width: 100px;
+      height: 50px;
+      background-color: #fff;
+      top: 70vh;
+      left: 50vw;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background-container">
+    <div class="shape triangle"></div>
+    <div class="shape circle"></div>
+    <div class="shape rectangle"></div>
+  </div>
+
+  <div class="container login-container animate__animated animate__fadeInUp">
+    <div class="card">
+      <div class="card-header">
+        <h2>Login</h2>
+      </div>
+      <div class="card-body">
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="validateLogin()">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function validateLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Add your authentication logic here
+      // For demonstration purposes, a simple alert is shown
+      if (username === "demo" && password === "demo123") {
+        alert("Login successful!");
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    }
+  </script>
+<!-- -->
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+   /* body {
+  background:
+    url('https://i.pinimg.com/originals/ec/c3/88/ecc3882e29654a291f8824494979145b.gif') left center no-repeat,
+    url('https://www.w3webschool.com/wp-content/uploads/2022/10/developer.gif') right center no-repeat;
+  background-size: 50% auto;
+  color: #fff;
+  height: 35rem;
+  font-family: math;
+}  */
+body {
+  background:
+    url('Images/DevelopmentMan.gif') left center no-repeat,
+     url('Images/Manlaptap.gif') right center no-repeat; 
+  background-size: 42% auto; 
+  color: #fff;
+  height: 35rem;
+  font-family: math;
+}
+
+
+    nav, footer {
+      background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .btn-gradient {
+      background: rgb(8,113,255);
+      background: linear-gradient(93deg, rgba(8,113,255,1) 0%, rgba(120,194,236,1) 100%);
+      color: #fff;
+      border: none;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .btn-gradient:hover {
+      background: rgb(8,113,255);
+      background: linear-gradient(93deg, rgba(120,194,236,1) 0%, rgba(8,113,255,1) 100%);
+      color: #fff;
+      transform: scale(1.1);
+    }
+  </style>
+  <title>Responsive Bootstrap Page with Dropdown</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2 text-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="Images/Axlogo.png" style="width: auto; height: 5rem;" class="d-inline-block align-top" alt="">
+                    </a>
+                </div>
+                <div class="col-8 text-center">
+                    <h1 style="color: rgb(231, 226, 226);">Web <span style="color: rgb(255, 0, 0);">Designing</span></h1>
+                </div>
+                <div class="col-2">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index3.html">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+
+        <h2 class="text-center mb-4">Bootstrap Responsive Page</h2>
+
+        <div class="text-center">
+          <div class="btn-group mt-4">
+            <button type="button" class="btn btn-primary btn-gradient dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              WEBSITE URL  SELECET
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://cssgradient.io/">Gradient-CSS <i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href="https://getcssscan.com/css-box-shadow-examples">Shadow-CSS <i class="fa-solid fa-video" style="color: black;"></i></a>
+              <a class="dropdown-item" href="https://weekendprojects.dev/posts/how-to-make-slide-animation-in-css/">Slide-CSS <i class="fa-solid fa-video-slash" style="color: black;"></i></a>
+              <a class="dropdown-item" href="https://www.flaticon.com/free-icon/load_3749604?related_id=3749604&origin=search">Free-icon-CSS <i class="fa-solid fa-file-video" style="color: black;"></i></a>
+              <a class="dropdown-item" href="https://lottiefiles.com/search?q=loader&category=animations">LottiefilesLoader-CSS <i class="fa-solid fa-table-list" style="color: black;"></i></a>
+              <a class="dropdown-item" href="https://www.brandcrowd.com/maker/logo/feather-quill-pen-939529?text=RA&isVariation=True">LogoCreater<i class="fa-brands fa-chrome" style="color: black;"></i></a>
+              <a class="dropdown-item" href="https://cloudconvert.com/mp4-to-gif">Mp4-to-Gif Convert <i class="fa-solid fa-camera" style="color: black;"></i></a>
+              <a class="dropdown-item" href="https://zzzcode.ai/code-generator?id=491fd246-382f-41f7-9b93-7d23a8546683&mode=edit">AI <i class="fa-solid fa-camera" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              <a class="dropdown-item" href=""><i class="fa-solid fa-display" style="color: black;"></i></a>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="fixed-bottom" style="height: 2rem;">
+    <p>&copy; 2024  Web Designing Company All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+</html>
